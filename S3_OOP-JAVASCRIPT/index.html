@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Batalla</title>
+    <script src="Jugador.js"></script>
+    <script src="Humano.js"></script>
+    <script src="Maquina.js"></script>
+    <script src="Extraterrestre.js"></script>
+    <script>
+
+        // Crear el campo y los Jugadores
+        var campo = new Array();
+        for (let i = 0; i < 50; i++) {
+            let human = new Humano("h" + (i + 1), 150, 70);
+            let machine = new Maquina("m" + (i + 1), 130, Math.floor(Math.random() * 100) + 1);
+            let alien = new Extraterrestre("e" + (i + 1), 150, Math.floor(Math.random() * 85) + 1);
+            campo.push(human, machine, alien);
+        }
+
+        // Barajar las posiciones
+        function shuffle() {
+            for (let i = campo.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [campo[i], campo[j]] = [campo[j], campo[i]];
+            }
+        }
+
+        shuffle();
+
+        // Enfrentamos a los jugadores
+        while (campo.length > 1) {
+            console.log("----- NUEVO ASALTO -----")
+            for (let i = campo.length - 1; i > 0; i = i - 2) {
+                campo[i].luchar(campo[i - 1]);
+                if (campo[i].salud <= 0) {
+                    campo.splice(i, 1);
+                } else if (campo[i - 1].salud <= 0) {
+                    campo.splice(i - 1, 1);
+                }
+            }
+            shuffle();
+        }
+
+        console.log("Tenemos un ganador!");
+        campo[0].mostrarNombre();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
