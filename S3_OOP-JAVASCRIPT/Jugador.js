@@ -11,7 +11,8 @@ class Jugador {
     }
 
     luchar(rival) {
-        console.log(this.nombre + "(" + this.salud + ")" + " vs " + rival.nombre + "(" + rival.salud + ")");
+        // Muestra la vida que tienen antes de realizar el enfrentamiento
+        // console.log(this.nombre + "(" + this.salud + ")" + " vs " + rival.nombre + "(" + rival.salud + ")");
         if (Math.random() * this.fuerza > rival.fuerza) {
             rival.salud -= this.fuerza;
             if (rival.salud <= 0) {

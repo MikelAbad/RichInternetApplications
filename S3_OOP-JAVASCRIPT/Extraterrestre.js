@@ -6,13 +6,13 @@ class Extraterrestre extends Jugador {
     }
 
     mostrarNombre() {
-        console.log("Mi nombre es " + this._invertirNombre(this.nombre));
+        console.log("Mi nombre es " + this._invertirNombre());
     }
 
-    _invertirNombre(string) {
-        var newString = "";
-        for (var i = string.length - 1; i >= 0; i--) {
-            newString += string[i];
+    _invertirNombre() {
+        let newString = "";
+        for (let i = this.nombre.length - 1; i >= 0; i--) {
+            newString += this.nombre[i];
         }
         return newString;
     }

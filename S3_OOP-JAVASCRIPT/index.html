@@ -10,7 +10,7 @@
     <script>
 
         // Crear el campo y los Jugadores
-        var campo = new Array();
+        let campo = [];
         for (let i = 0; i < 50; i++) {
             let human = new Humano("h" + (i + 1), 150, 70);
             let machine = new Maquina("m" + (i + 1), 130, Math.floor(Math.random() * 100) + 1);
@@ -25,12 +25,11 @@
                 [campo[i], campo[j]] = [campo[j], campo[i]];
             }
         }
-
         shuffle();
 
         // Enfrentamos a los jugadores
         while (campo.length > 1) {
-            console.log("----- NUEVO ASALTO -----")
+            console.log("----- NUEVO ASALTO -----");
             for (let i = campo.length - 1; i > 0; i = i - 2) {
                 campo[i].luchar(campo[i - 1]);
                 if (campo[i].salud <= 0) {

@@ -1,0 +1,55 @@
+#menu {
+    background: #ff9600 none;
+    display: inline-block;
+    text-align: left;
+}
+
+#menu ul li {
+    text-align: left;
+    list-style-type: none;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    
+}
+
+#main {
+    background: #ff9600 none;
+    display: inline-block;
+    vertical-align:top;
+}
+
+#main ul {
+    padding: 0px 0px 0px 60px;
+}
+
+#main ol {
+    padding: 0px 0px 0px 60px;
+}
+
+#main li {
+    color: #FFFFFF;
+}
+
+#main tr {
+    padding: 0px 0px 0px 50px;
+}
+
+#main td {
+    color: #FFFFFF;
+    padding: 0px 0px 0px 20px;
+}
+
+h1 {
+    color: #082c69;
+    padding: 0px 20px;
+}
+
+h2 {
+    color: #082c69;
+    padding: 0px 20px;
+}
+
+h3 {
+    color: #082c69;
+    padding: 0px 20px;
+}
