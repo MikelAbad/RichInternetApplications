@@ -8,7 +8,6 @@
     <script src="Maquina.js"></script>
     <script src="Extraterrestre.js"></script>
     <script>
-
         // Crear el campo y los Jugadores
         let campo = [];
         for (let i = 0; i < 50; i++) {
@@ -25,11 +24,12 @@
                 [campo[i], campo[j]] = [campo[j], campo[i]];
             }
         }
+
         shuffle();
 
-        // Enfrentamos a los jugadores
+        // Enfrentamos a los jugadores hasta que quede uno
         while (campo.length > 1) {
-            console.log("----- NUEVO ASALTO -----");
+            console.log("AVISO: NUEVO ASALTO!");
             for (let i = campo.length - 1; i > 0; i = i - 2) {
                 campo[i].luchar(campo[i - 1]);
                 if (campo[i].salud <= 0) {
@@ -38,9 +38,10 @@
                     campo.splice(i - 1, 1);
                 }
             }
+            console.log("Jugadores vivos: " + campo.length)
             shuffle();
         }
-
+        console.log("BADA BING BADA BOOM")
         console.log("Tenemos un ganador!");
         campo[0].mostrarNombre();
     </script>

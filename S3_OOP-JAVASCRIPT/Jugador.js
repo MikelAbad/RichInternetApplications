@@ -1,6 +1,6 @@
 class Jugador {
 
-    constructor (nombre, salud, fuerza) {
+    constructor(nombre, salud, fuerza) {
         this.nombre = nombre;
         this.salud = salud;
         this.fuerza = fuerza;
@@ -11,18 +11,10 @@ class Jugador {
     }
 
     luchar(rival) {
-        // Muestra la vida que tienen antes de realizar el enfrentamiento
-        // console.log(this.nombre + "(" + this.salud + ")" + " vs " + rival.nombre + "(" + rival.salud + ")");
         if (Math.random() * this.fuerza > rival.fuerza) {
             rival.salud -= this.fuerza;
-            if (rival.salud <= 0) {
-                console.log(rival.nombre + " ha muerto.")
-            }
         } else {
             this.salud -= rival.fuerza;
-            if (this.salud <= 0) {
-                console.log(this.nombre + " ha muerto.")
-            }
         }
     }
 }
