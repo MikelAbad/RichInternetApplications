@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coordenadas</title>
+</head>
+<style>
+    canvas {
+        border: black solid 2px;
+    }
+</style>
+<script>
+    function dibujar() {
+        let canvas = document.getElementById("lienzo");
+        let context = canvas.getContext("2d");
+
+        dibujarBase(canvas, context);
+        dibujarTexto(context);
+        dibujarLineas(context);
+    }
+
+    function dibujarBase(canvas, context) {
+        for (let x = 0; x < canvas.width; x += 10) {
+            context.moveTo(x, 0);
+            context.lineTo(x, canvas.height);
+        }
+
+        for (let y = 0; y < canvas.height; y += 10) {
+            context.moveTo(0, y);
+            context.lineTo(canvas.width, y);
+        }
+
+        context.strokeStyle = "#bfbfbf";
+        context.stroke();
+    }
+
+    function dibujarTexto(context) {
+        context.font = "bold 12px arial";
+        context.fillText("x", 248, 43);
+        context.fillText("y", 58, 165);
+
+        context.textBaseline = "top";
+        context.fillText("(0,0)", 8, 5);
+        context.fillStyle = "green";
+
+        context.fillStyle = "black";
+        context.textAligh = "left";
+        context.textBaseline = "bottom";
+        context.fillText("(500,375)", 445, 362);
+    }
+
+    function dibujarLineas(context) {
+        context.beginPath();
+        // Línea horizontal
+        context.moveTo(0, 40);
+        context.lineTo(240, 40);
+        context.moveTo(260, 40);
+        context.lineTo(500, 40);
+        // Flechita
+        context.moveTo(495, 35);
+        context.lineTo(500, 40);
+        context.lineTo(495, 45);
+        // Línea vertical
+        context.moveTo(60, 0);
+        context.lineTo(60, 153);
+        context.moveTo(60, 173);
+        context.lineTo(60, 375);
+        // Flechita
+        context.moveTo(65, 370);
+        context.lineTo(60, 375);
+        context.lineTo(55, 370);
+
+        context.strokeStyle = "#000000";
+        context.stroke();
+    }
+
+    function borrar() {
+        let canvas = document.getElementById("lienzo");
+        let context = canvas.getContext("2d");
+        context.clearRect(0, 0, canvas.width, canvas.height);
+    }
+
+    window.onload = function () {
+        let botonDibujar = document.getElementById("dibujar");
+        botonDibujar.onclick = dibujar;
+
+        let botonBorrar = document.getElementById("borrar");
+        botonBorrar.onclick = borrar;
+    }
+</script>
+<body>
+<canvas id="lienzo" width="500" height="375"></canvas>
+<button id="dibujar">Dibujar</button>
+<button id="borrar">Borrar</button>
+</body>
+</html>

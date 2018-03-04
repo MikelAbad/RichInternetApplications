@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Imagen</title>
+</head>
+<style>
+    canvas {
+        border: black solid 2px;
+    }
+</style>
+<script>
+
+    function dibujarLogo() {
+        let canvas = document.getElementById("lienzo");
+        let context = canvas.getContext("2d");
+        let logo = new Image();
+        logo.src = "/images/ehu.png";
+        logo.onload = function () {
+            context.drawImage(logo, 0, 0);
+        }
+    }
+
+    function borrar() {
+        let canvas = document.getElementById("lienzo");
+        let context = canvas.getContext("2d");
+        context.clearRect(0, 0, canvas.width, canvas.height);
+    }
+
+    window.onload = function () {
+        let botonDibujar = document.getElementById("dibujar");
+        botonDibujar.onclick = dibujarLogo;
+
+        let botonBorrar = document.getElementById("borrar");
+        botonBorrar.onclick = borrar;
+    }
+</script>
+<body>
+<canvas id="lienzo" width="600" height="600"></canvas>
+<button id="dibujar">Dibujar</button>
+<button id="borrar">Borrar</button>
+</body>
+</html>

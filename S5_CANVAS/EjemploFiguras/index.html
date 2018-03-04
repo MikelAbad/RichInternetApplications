@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elemento Canvas</title>
+</head>
+<style>
+    canvas {
+        border: 1px solid black;
+    }
+</style>
+<script>
+    window.onload = function() {
+        var botonPintar = document.getElementById("pintar");
+        botonPintar.onclick = pintar;
+
+        var botonRellenar = document.getElementById("rellenar");
+        botonRellenar.onclick = rellenarUltimaFigura;
+
+        var botonArco = document.getElementById("arco");
+        botonArco.onclick = arquear;
+
+        function pintar() {
+            var lienzo = document.getElementById("lienzo");
+            var context = lienzo.getContext("2d");
+            context.beginPath();
+            context.moveTo(100,150);
+            context.lineTo(250,75);
+            context.lineTo(125,30);
+            context.closePath();
+            context.lineWidth = 5;
+            context.stroke();
+        }
+
+        function rellenarUltimaFigura() {
+            var lienzo = document.getElementById("lienzo");
+            var context = lienzo.getContext("2d");
+            context.fillStyle = "red";
+            context.fill();
+        }
+
+        function arquear() {
+            var lienzo = document.getElementById("lienzo");
+            var context = lienzo.getContext("2d");
+            context.beginPath();
+            context.arc(400,75,50,1.5*Math.PI,0.5*Math.PI,true);
+            context.lineWidth = 5;
+            context.stroke();
+        }
+    }
+
+
+</script>
+<body>
+    <canvas id="lienzo" width="600" height="200"></canvas>
+    <button id="pintar">Pintar</button>
+    <button id="rellenar">Rellenar</button>
+    <button id="arco">Arco</button>
+</body>
+</html>
