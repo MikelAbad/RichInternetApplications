@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSFiddle</title>
+</head>
+<body>
+<!-- HTML
+    <div id="options">
+        <select id="combo">
+            <option value="6362368">Bilbao</option>
+            <option value="6358157">Donostia</option>
+            <option value="6355286">Vitoria</option>
+        </select>
+        <button id='button' type="button">Previsión para los próximos 3 días</button>
+    </div>
+    <br>
+    <div id="weatherinfo"></div>
+    <br>
+    <div id="weatherone"></div>
+    <br>
+    <div id="weathertwo"></div>
+    <br>
+    <div id="weatherthree"></div>
+-->
+
+<!-- JavaScript
+    var button = document.getElementById('button');
+    button.addEventListener('click', getWeather);
+
+    function getWeather() {
+        var combo = document.getElementById('combo');
+        var query = "https://api.openweathermap.org/data/2.5/forecast?id=" + combo.value +
+            "&&APPID=64da3817f22a9ce8970e6275ea355650";
+
+        $.ajax({
+            url: query,
+            success: function (result) {
+                $("#weatherinfo").html("Previsiones dadas en un intervalo de 3 horas (Actual: " +
+                    result.list[0].dt_txt.slice(10, 19) + ")");
+                $("#weatherone").html("Previsión para " + result.city.name + " el día " +
+                    result.list[8].dt_txt.slice(0, 10) + "." +
+                    "<br>Tiempo esperado: " + result.list[8].weather[0].main + " (" +
+                    result.list[8].weather[0].description + ")" +
+                    "<br>Temperatura esperada: " + (result.list[8].main.temp - 273.15).toFixed(2) + "ºC");
+                $("#weathertwo").html("Previsión para " + result.city.name + " el día " +
+                    result.list[16].dt_txt.slice(0, 10) + "." +
+                    "<br>Tiempo esperado: " + result.list[16].weather[0].main + " (" +
+                    result.list[16].weather[0].description + ")" +
+                    "<br>Temperatura esperada: " + (result.list[16].main.temp - 273.15).toFixed(2) + "ºC");
+                $("#weatherthree").html("Previsión para " + result.city.name + " el día " +
+                    result.list[24].dt_txt.slice(0, 10) + "." +
+                    "<br>Tiempo esperado: " + result.list[24].weather[0].main + " (" +
+                    result.list[24].weather[0].description + ")" +
+                    "<br>Temperatura esperada: " + (result.list[24].main.temp - 273.15).toFixed(2) + "ºC");
+            }
+        });
+    }
+-->
+</body>
+</html>
