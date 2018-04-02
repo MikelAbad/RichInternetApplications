@@ -13,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,6 +63,12 @@
         <option value="$PROJECT_DIR$/S8_VIDEO-AUDIO/videocanvas/videocanvas.html" />
         <option value="$PROJECT_DIR$/S8_VIDEO-AUDIO/videocanvas/videocanvas.js" />
         <option value="$PROJECT_DIR$/S8_VIDEO-AUDIO/videocanvas/videocanvas.css" />
+        <option value="$PROJECT_DIR$/S9_FORM-DND/ejemplo/filedrag.css" />
+        <option value="$PROJECT_DIR$/S9_FORM-DND/ejemplo/filedrag.html" />
+        <option value="$PROJECT_DIR$/S9_FORM-DND/ejercicio/filedrag.css" />
+        <option value="$PROJECT_DIR$/S9_FORM-DND/ejemplo/filedrag.js" />
+        <option value="$PROJECT_DIR$/S9_FORM-DND/ejercicio/filedrag.js" />
+        <option value="$PROJECT_DIR$/S9_FORM-DND/ejercicio/filedrag.html" />
       </list>
     </option>
   </component>
@@ -80,8 +86,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="101" />
-    <option name="y" value="106" />
+    <option name="x" value="766" />
+    <option name="y" value="64" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -121,7 +127,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,31 +134,16 @@
               <item name="dawe" type="b2602c69:ProjectViewProjectNode" />
               <item name="dawe" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="dawe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dawe" type="462c0819:PsiDirectoryNode" />
-              <item name="S6_GEOLOCATION" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dawe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dawe" type="462c0819:PsiDirectoryNode" />
-              <item name="S8_VIDEO-AUDIO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dawe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dawe" type="462c0819:PsiDirectoryNode" />
-              <item name="S8_VIDEO-AUDIO" type="462c0819:PsiDirectoryNode" />
-              <item name="videocanvas" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Qix" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="JavaScriptPreferStrict" value="false" />
@@ -163,6 +153,9 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\dawe\S9_FORM-DND\ejercicio" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\dawe\S5_CANVAS\EjemploMatriz" />
     </key>
@@ -220,11 +213,16 @@
       <workItem from="1521140572400" duration="136000" />
       <workItem from="1521812760804" duration="6080000" />
       <workItem from="1522081495826" duration="41000" />
+      <workItem from="1522413023895" duration="24000" />
+      <workItem from="1522414574913" duration="929000" />
+      <workItem from="1522419878550" duration="944000" />
+      <workItem from="1522426631112" duration="7920000" />
+      <workItem from="1522669392347" duration="639000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47049000" />
+    <option name="totallyTimeSpent" value="57505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -244,7 +242,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -259,20 +257,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/S3_OOP-JAVASCRIPT/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/S3_OOP-JAVASCRIPT/ECMAScript/productosOOP.html" />
-    <entry file="file://$PROJECT_DIR$/S3_OOP-JAVASCRIPT/ECMAScript/oop/libros.js" />
-    <entry file="file://$PROJECT_DIR$/S3_OOP-JAVASCRIPT/ECMAScript/oop/productos.js" />
-    <entry file="file://$PROJECT_DIR$/S3_OOP-JAVASCRIPT/ECMAScript/oop/discos.js" />
-    <entry file="file://$PROJECT_DIR$/Template.html" />
-    <entry file="file://$PROJECT_DIR$/HTML5-JS/ejer1.html" />
-    <entry file="file://$PROJECT_DIR$/HTML5-JS/ejer2.html" />
     <entry file="file://$PROJECT_DIR$/HTML5-JS/ejer3.html" />
     <entry file="file://$PROJECT_DIR$/HTML5-JS/ejer4.html" />
     <entry file="file://$PROJECT_DIR$/HTML5-JS/ejer5.html" />
@@ -465,6 +449,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/S8_VIDEO-AUDIO/videocanvas/videocanvas.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/S8_VIDEO-AUDIO/videocanvas/videocanvas.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -474,15 +465,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/S8_VIDEO-AUDIO/videocanvas/videocanvas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
+        <state relative-caret-position="1870">
           <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/S8_VIDEO-AUDIO/videocanvas/videocanvas.css">
+    <entry file="file://$PROJECT_DIR$/S9_FORM-DND/ejemplo/DragDropFile.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/S9_FORM-DND/ejemplo/filedrag.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/S9_FORM-DND/ejercicio/DragDropFile.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/S9_FORM-DND/ejercicio/filedrag.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/S9_FORM-DND/ejemplo/filedrag.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/S9_FORM-DND/ejemplo/filedrag.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/S9_FORM-DND/ejercicio/filedrag.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/S9_FORM-DND/ejercicio/filedrag.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

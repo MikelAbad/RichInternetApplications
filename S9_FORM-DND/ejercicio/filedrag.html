@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Ejercicio Práctico</title>
+    <link rel="stylesheet" type="text/css" media="all" href="filedrag.css"/>
+</head>
+<body>
+<form id="upload" action="http://ikasten.io/evaluation/upload.php" method="POST"
+      enctype="multipart/form-data">
+    <fieldset>
+        <legend>Datos del cliente</legend>
+        Nombre: <input type="text" name="name" placeholder="Introduce tu nombre" autofocus><br><br>
+        Teléfono: <input type="tel" name="tel" placeholder="Patrón: 123-456-789"><br><br>
+        E-mail: <input type="email" name="email" placeholder="Introduce tu dirección de correo electrónico">
+    </fieldset>
+    <fieldset>
+        <legend>Libros</legend>
+        <datalist id="libros">
+            <option value="The Tempest">
+            <option value="Midsummer Night's Dream">
+            <option value="King Lear">
+            <option value="Hamlet">
+            <option value="Much Ado About Nothing">
+        </datalist>
+        <input type="text" name="libro" list="libros"> Cantidad (Máx. 5): <input type="number" name="cant" min="0"
+                                                                                 max="5" step="1">
+    </fieldset>
+    <div>
+        <input type="file" id="fileselect" name="imagenes[]" multiple/>
+        <label for="fileselect"></label>
+        <div id="filedrag">or drop files here</div>
+    </div>
+    <button type="submit" id="enviar">Enviar</button>
+</form>
+<script src="filedrag.js"></script>
+</body>
+</html>
